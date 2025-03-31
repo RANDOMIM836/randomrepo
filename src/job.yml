@@ -1,15 +1,15 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
 command: >-
-  python 
-  --
-  --
+  python train.py
+  --reg_rate 0.01
+  --data_path ${{inputs.training_data}}
 inputs:
   training_data: 
     type: uri_folder 
-    path: 
+    path: azureml://datastores/workspaceblobstore/paths/diabetes-dev-folder/data/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: 
-experiment_name: 
-description: 
+compute: randomim8361
+experiment_name: diabetes-experiment
+description: This job trains a diabetes prediction model using scikit-learn.
