@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: .
+command: "echo 'Hello, Azure ML!'"
+compute: randomim8361
+experiment_name: test-experiment
+description: Test job to verify basic setup.
