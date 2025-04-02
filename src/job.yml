@@ -9,9 +9,8 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: azureml://datastores/workspaceblobstore/paths/diabetes-dev-folder/data/
+    path: azureml://datastores/workspaceblobstore/paths/diabetes-dev-folder/
   reg_rate: 0.01
-
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: randomim8361
 experiment_name: diabetes-experiment
