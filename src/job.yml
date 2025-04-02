@@ -9,7 +9,7 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: azureml://subscriptions/1cc7bbec-8f68-4e41-be8c-d134d0f769ae/resourcegroups/azuremlcli/workspaces/Azuremlcliv1/datastores/workspaceblobstore/paths/LocalUpload/06521a3f1f07281efcb50cb74d1e483a/data/
+    path: azureml://subscriptions/1cc7bbec-8f68-4e41-be8c-d134d0f769ae/resourcegroups/azuremlcli/workspaces/Azuremlcliv1/datastores/workspaceblobstore/paths/LocalUpload/06521a3f1f07281efcb50cb74d1e483a/data//experimentation/data/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: randomim8361
